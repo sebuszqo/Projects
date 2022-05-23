@@ -1,13 +1,21 @@
-// const fetch = require('node-fetch');
+const fetch = require('node-fetch');
+const { appendFile } = require('fs').promises;
+const {
+  normalize,
+  resolve,
+} = require('path');
 
-import fetch from 'node-fetch';
+function safeJoin(base, target) {
+  const targetPath = `.${normalize(`/${target}`)}`;
+  return resolve(base, targetPath);
+}
 
-const cityName = process.argv[2];
+const getDataFileName = (city) => safeJoin('./data/', `${city}.txt`);
 
-const processWeatherData = (data) => {
+const processWeatherData = async (data, cityName) => {
   const foundData = data.find((stationData) => stationData.stacja === cityName);
   if (foundData === undefined) { //! foundData
-    return console.log('Nie mamy pogody dla twojego miasta :(');
+    return console.log('There is no such city in our API :(');
   }
   const {
     cisnienie: pressure,
@@ -16,8 +24,20 @@ const processWeatherData = (data) => {
   } = foundData;
   const weatherInfo = `\nIn ${cityName} there is ${temperature}°C, ${humidity}% of humidity and pressure of ${pressure}hPa.\n`;
   console.log(weatherInfo);
+
+  const dateString = new Date().toLocaleString();
+
+  await appendFile(getDataFileName(cityName), `${dateString}\n${weatherInfo}\n`);
 };
 
-fetch('http://danepubliczne.imgw.pl/api/data/synop')
-  .then((r) => r.json())
-  .then(processWeatherData);
+const checkCityWeather = async (cityName) => {
+  try {
+    const res = await fetch('http://danepubliczne.imgw.pl/api/data/synop');
+    const data = await res.json();
+    await processWeatherData(data, cityName);
+  } catch (error) {
+    console.log('Error has occurred :(', error);
+  }
+};
+
+checkCityWeather(process.argv[2]);
