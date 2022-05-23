@@ -15,7 +15,7 @@ const getDataFileName = (city) => safeJoin('./data/', `${city}.txt`);
 const processWeatherData = async (data, cityName) => {
   const foundData = data.find((stationData) => stationData.stacja === cityName);
   if (foundData === undefined) { //! foundData
-    return console.log('There is no such city in our API :(');
+    throw new Error('There is no such city in our API :(');
   }
   const {
     cisnienie: pressure,
