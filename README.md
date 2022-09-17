@@ -1,5 +1,5 @@
 <h1 align="center">Smaller Projects Repository</h1>
-<h4 align="center">This Repository includes my smaller projects that I did after almost every step of learning backend JS development (My-Learning-Path):
+<h4 align="center">This Repository includes my smaller projects that I did after almost every step of learning backend development (My-Learning-Path):
 </h4>
 
 - ❄️ Weather App ➡️ My really really simple project during Node.js stage <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/>
