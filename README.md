@@ -1,7 +1,8 @@
 # Projects Repository
 This Repository includes my projects that I did after almost every step of learing backend JS development (My-Learning-Path):
 
-- ❄️ Weather App ➡️ **My really really simple project during Node.js stage** ![icon](https://img.icons8.com/color/48/000000/nodejs.png)
+- ❄️ Weather App ➡️ **My really really simple project during Node.js stage** 
+![icon](https://img.icons8.com/color/48/000000/nodejs.png)
 
 - 🍪 Cookie-Maker-App ➡️ **My first project during third stage (Express.js)**
 
