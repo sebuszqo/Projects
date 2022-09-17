@@ -4,6 +4,7 @@ const methodOverride = require('method-override');
 const {clientRouter} = require("./routes/client");
 const {homeRouter} = require("./routes/home");
 const {db} = require("./utils/db");
+const {handleError} = require("./utils/errors");
 
 const app = express();
 
@@ -29,6 +30,8 @@ app.get('/test', (req, res) => {
     })
     // res.send(db.getOne('658b6bd4-a3f3-46ed-8a9e-120bd107e102').name)
 })
+
+app.use(handleError)
 
 app.listen(3000, 'localhost', () => {
     console.log("Listening on http://localhost:3000")

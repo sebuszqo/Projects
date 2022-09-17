@@ -20,3 +20,11 @@ thead tr, .one-client-table th {
 td, th {
     padding: 7px;
 }
+
+.error {
+    background: #ff5c5c;
+    border: 2px dotted black;
+    padding: 15px;
+    margin: 10px auto;
+    width: 80%;
+}
