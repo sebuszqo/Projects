@@ -2,7 +2,7 @@
 <h4 align="center">This Repository includes my projects that I did after almost every step of learing backend JS development (My-Learning-Path):
 </h4>
 
-<p> - ❄️ Weather App ➡️ **My really really simple project during Node.js stage**<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </p>
+- ❄️ Weather App ➡️ **My really really simple project during Node.js stage**<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/>
 
 <p> - 🍪 Cookie-Maker-App ➡️ **My first project during third stage (Express.js)** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/></p>
 
