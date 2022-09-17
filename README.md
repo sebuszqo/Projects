@@ -2,7 +2,7 @@
 <h4 align="center">This Repository includes my projects that I did after almost every step of learing backend JS development (My-Learning-Path):
 </h4>
 
-<h10 align="center">- ❄️ Weather App ➡️ My really really simple project during Node.js stage <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/></h10>
-<h10 align="center">- 🍪 Cookie-Maker-App ➡️ My first project during third stage (Express.js) (1.09.2022)<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/></h10>
-<h10 align="center">- 🍪 Cookie-Maker-App-OOP ➡️ My first project during third stage (Express.js) but rewritten to OOP (8.09.2022)<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/></h10>
-<h10 align="center">- 🏙 CRM-App ➡️ My second project (CRUD) during third stage, I TRIED to do it so that it is written in a RESTful WAY (15.09.2022) <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/></h10>
+<p align="left">- ❄️ Weather App ➡️ My really really simple project during Node.js stage <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </p>
+<p align="left">>- 🍪 Cookie-Maker-App ➡️ My first project during third stage (Express.js) (1.09.2022)<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/></p>
+<p align="left">- 🍪 Cookie-Maker-App-OOP ➡️ My first project during third stage (Express.js) but rewritten to OOP (8.09.2022)<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/></p>
+<p align="left">- 🏙 CRM-App ➡️ My second project (CRUD) during third stage, I TRIED to do it so that it is written in a RESTful WAY (15.09.2022) <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/></p>
