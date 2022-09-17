@@ -1,5 +1,6 @@
 <h1 align="center">Projects Repository</h1>
-This Repository includes my projects that I did after almost every step of learing backend JS development (My-Learning-Path):
+<h3 align="center">This Repository includes my projects that I did after almost every step of learing backend JS development (My-Learning-Path):
+</h3>
 
 - ❄️ Weather App ➡️ **My really really simple project during Node.js stage**<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/>
 
