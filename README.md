@@ -16,7 +16,7 @@
 - <p>🗒 ToDo-mySQL-App ➡️ My first rly small project during SQL/noSQL stage with use mySQL(01.10.2022)<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/></p>
     <p>- Link to app: ...</p>   
     <br>
-- <p>🗒 ToDo-noSQL-App ➡️ Same app as above but rewritten with use of noSQL DB (mongoDB)(10.10.2022)</p>
+- <p>🗒 ToDo-noSQL-App ➡️ Same app as above but rewritten with use of noSQL DB (mongoDB)(10.10.2022)<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/></p>
     <p>- Link to app: ...</p>   
     <br>
 - <p>🎅🏻 SumUp-app - Santa-list ➡️ My second project during SQL/noSQL stage with use mySQL(22.10.2022)<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/></p>
