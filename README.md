@@ -21,7 +21,7 @@
     <br>
 - <p>🎅🏻 SumUp-app - Santa-list ➡️ My second project during SQL/noSQL stage with use mySQL(22.10.2022)<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/></p>
     <p>- Link to app: ...</p>
-- <p>🍪 Cookie-Maker-OOP-TS ➡️ The same project as ealier but this is fully written in TypeScript<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="mysql" width="40" height="40"/></p>
+- <p>🍪 Cookie-Maker-OOP-TS ➡️ The same project as ealier but this is fully written in TypeScript(7.12.2022)<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="mysql" width="40" height="40"/></p>
     <p>- Link to app: ...</p>
 
 
