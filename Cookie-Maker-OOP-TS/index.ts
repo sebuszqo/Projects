@@ -2,12 +2,9 @@ import * as express from 'express';
 import {static as expressStatic, json, Application, Response, Request} from "express";
 import * as cookieParser from 'cookie-parser';
 import {engine} from "express-handlebars";
-import * as hbs from 'express-handlebars';
 
-// import {HomeRouter} from "./routes/home";
 import {ConfiguratorRouter} from "./routes/configurator";
 
-// import {OrderRouter} from "./routes/order";
 
 import {handlebarsHelpers} from "./utils/handlebars-helpers";
 
