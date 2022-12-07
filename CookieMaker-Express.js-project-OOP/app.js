@@ -12,12 +12,11 @@ class CookieMakerApp {
         this._loadData();
         this._configureApp();
         this._setRoutes();
-        this._runApp();
+        this._runApp();x
     }
 
     _configureApp() {
         this.app = express();
-
         this.app.use(express.json());
         this.app.use(express.static('public'));
         this.app.use(cookieParser());
@@ -38,8 +37,8 @@ class CookieMakerApp {
     }
 
     _runApp() {
-        this.app.listen(3000, 'localhost', () => {
-            console.log("Listening on http://localhost:3000")
+        this.app.listen(3002, 'localhost', () => {
+            console.log("Listening on http://localhost:3002")
         });
     }
 
