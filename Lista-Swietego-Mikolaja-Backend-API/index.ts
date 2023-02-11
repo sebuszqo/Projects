@@ -13,15 +13,15 @@ const app = express();
 
 app.use(express.json()); // Content-type: application/json
 
+app.use(cors({
+    origin: "http://localhost:3000",
+}));
+
 app.use('/', homeRouter);
 app.use('/child', childRouter);
 app.use('/gift', giftRouter);
 
 app.use(handleError);
-
-app.use(cors({
-    origin: "http://localhost:3000",
-}));
 
 app.listen(3001, '0.0.0.0', () => {
     console.log('Listening on http://localhost:3001');
