@@ -7,7 +7,7 @@ interface Props {
 export const GiftTableRow = (props: Props) => (
     <tr>
         <th>{props.gift.id}</th>
-        <th>{props.gift.name}</th>
-        <th>{props.gift.count}</th>
+        <td>{props.gift.name}</td>
+        <td>{props.gift.count}</td>
     </tr>
 )
