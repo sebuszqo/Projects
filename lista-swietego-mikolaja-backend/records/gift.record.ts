@@ -37,6 +37,12 @@ export class GiftRecord implements GiftEntity {
         return results.length === 0 ? null : new GiftRecord(results[0]);
     }
 
+    async deleteOne(): Promise<void> {
+        await pool.execute("DELETE FROM `gifts` WHERE `id` = :id", {
+            id: this.id,
+        })
+    }
+
     async insert(): Promise<string> {
         if (!this.id) {
             this.id = uuid();

@@ -1,4 +1,4 @@
-import {GiftEntity} from "../../types/gift";
+import {GiftEntity} from "types";
 
 interface Props {
     gift: GiftEntity;

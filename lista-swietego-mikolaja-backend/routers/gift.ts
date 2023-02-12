@@ -13,6 +13,10 @@ giftRouter
         });
     })
 
+    .delete("/:id", async (req, res) => {
+
+    })
+
     .post('/', async (req, res) => {
         const data = {
             ...req.body,

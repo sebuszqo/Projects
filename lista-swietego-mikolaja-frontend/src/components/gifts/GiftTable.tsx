@@ -1,8 +1,8 @@
-import {GiftEntity} from "../../types/gift";
+import {GiftEntity} from 'types';
 import {GiftTableRow} from "./GiftTableRow";
 
 interface Props {
-    gifts: GiftEntity[];
+    gifts: GiftEntity[]
 }
 
 export const GiftTable = (props: Props) => (
