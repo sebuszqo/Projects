@@ -15,6 +15,7 @@ giftRouter
     })
 
     .delete("/:id", async (req, res) => {
+        console.log(req.params.id)
         const gift = await GiftRecord.getOne(req.params.id)
         if (!gift) {
             throw new ValidationError("No such gift with that ID")
@@ -23,6 +24,7 @@ giftRouter
         if (await gift.countGivenGifts() > 0) {
             throw new ValidationError("Cannot remove given gift.")
         }
+        await gift.deleteOne()
         // status 200
         res.end();
 

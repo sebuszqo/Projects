@@ -21,7 +21,7 @@ export const handleError = (err: Error, req: Request, res: Response, next: NextF
 
     res
         .status(err instanceof ValidationError ? 400 : 500)
-        .render('error', {
+        .json({
             message: err instanceof ValidationError ? err.message : 'Przepraszamy, spróbuj ponownie za kilka minut.',
         });
 };

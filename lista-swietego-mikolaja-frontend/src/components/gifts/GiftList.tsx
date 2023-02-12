@@ -5,18 +5,22 @@ import {GiftEntity} from 'types';
 export const GiftList = () => {
     const [giftsList, setGiftsList] = useState<GiftEntity[] | null>(null)
 
+    const refreshGifts = async () => {
+        // it will make my site "loading" doing refreshing big set of data
+        setGiftsList(null);
+        const response = await fetch("http://localhost:3001/gift")
+        const data = await response.json()
+        setGiftsList(data.giftsList);
+    };
+
     useEffect(() => {
-        (async () => {
-            const response = await fetch("http://localhost:3001/gift")
-            const data = await response.json()
-            setGiftsList(data.giftsList);
-        })();
+        refreshGifts()
     }, [])
 
     if (giftsList === null) {
         return <p>Loading...</p>
     }
     return <><h1>Gifts</h1>
-        <GiftTable gifts={giftsList}/>
+        <GiftTable gifts={giftsList} onGiftsChange={refreshGifts}/>
     </>
 }
