@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import {GiftTable} from "./GiftTable";
 import {GiftEntity} from 'types';
+import {Spinner} from "../../common/Spinner/Spinner";
 
 export const GiftList = () => {
     const [giftsList, setGiftsList] = useState<GiftEntity[] | null>(null)
@@ -18,7 +19,7 @@ export const GiftList = () => {
     }, [])
 
     if (giftsList === null) {
-        return <p>Loading...</p>
+        return <Spinner/>
     }
     return <><h1>Gifts</h1>
         <GiftTable gifts={giftsList} onGiftsChange={refreshGifts}/>

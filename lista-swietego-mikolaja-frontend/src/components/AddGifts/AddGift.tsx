@@ -1,8 +1,10 @@
 import {useState} from "react";
 import {CreateGiftRequest} from "types";
+import {Spinner} from "../../common/Spinner/Spinner";
 
 export const AddGift = () => {
     const [form, setForm] = useState<CreateGiftRequest>({count: 0, name: ""})
+    const [loading, setLoading] = useState<boolean>(true)
 
     const updateForm = (key: string, value: any) => {
         setForm(form => ({
@@ -11,6 +13,9 @@ export const AddGift = () => {
         }));
     };
 
+    if (loading) {
+        return <Spinner/>
+    }
     return <form>
         <h2>Add gift </h2>
 
