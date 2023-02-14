@@ -17,7 +17,6 @@ app.use(cors({
     origin: "http://localhost:3000",
 }));
 
-app.use('/', homeRouter);
 app.use('/child', childRouter);
 app.use('/gift', giftRouter);
 
