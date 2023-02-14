@@ -1,11 +1,21 @@
 import {Router} from "express";
 import {GiftRecord} from "../records/gift.record";
 import {ValidationError} from "../utils/errors";
-import {CreateGiftRequest} from "../types";
+import {CreateGiftRequest, GetSingleGiftRes} from "../types";
 
 export const giftRouter = Router();
 
 giftRouter
+
+    .get('/:GiftId', async (req, res) => {
+        const gift = await GiftRecord.getOne(req.params.GiftId);
+        const givenCount = await gift.countGivenGifts()
+        res.json({
+            gift,
+            givenCount
+        } as GetSingleGiftRes);
+    })
+
 
     .get('/', async (req, res) => {
         const giftsList = await GiftRecord.listAll();

@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
 import {GiftsView} from "./views/GiftsView";
-import {Link, NavLink, Route, Routes} from "react-router-dom";
+import {NavLink, Route, Routes} from "react-router-dom";
 import {NotFoundView} from "./views/NotFoundView";
+import {SingleGiftView} from "./components/SingleGiftView";
 
 function App() {
     const colorOfLink = ({isActive}: { isActive: boolean; }) => ({color: isActive ? 'green' : 'red'})
@@ -14,10 +15,11 @@ function App() {
             <NavLink style={colorOfLink} to={'/gift'}>
                 Switch to gifts
             </NavLink> |
-            <NavLink style={colorOfLink} to={'/'}>Switch to main</NavLink>
+            <NavLink style={colorOfLink} to={'/child'}>Switch to child</NavLink>
             <Routes>
                 {/*<Route path='/' element={<MainView/>}/>*/}
                 <Route path='/gift' element={<GiftsView/>}/>
+                <Route path='/gift/:GiftId' element={<SingleGiftView/>}/>
                 <Route path='/child' element={<GiftsView/>}/>
                 <Route path='*' element={<NotFoundView/>}/>
             </Routes>
